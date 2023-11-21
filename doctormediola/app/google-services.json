@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "5473991529",
+    "project_id": "mediola-116c1",
+    "storage_bucket": "mediola-116c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5473991529:android:b292b00bde3c56dc4fdbf8",
+        "android_client_info": {
+          "package_name": "com.example.doctormediola"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5473991529-p3cojksrp0qlfro1kspqg7o15aaopoj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcp_eKGA5V7ROhjSFeMFcrqPK3L6aZ_FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5473991529-p3cojksrp0qlfro1kspqg7o15aaopoj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

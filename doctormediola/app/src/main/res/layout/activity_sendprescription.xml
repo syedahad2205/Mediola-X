@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sendprescription">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="PREVIOUS REPORTS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/noreport"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reportryc"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="prescription Deatails"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etpreacription"
+        android:hint="ENTER THE PRESCRIPTION DETAILS "
+        android:inputType="textMultiLine"
+        android:lines="25"
+        android:minLines="4"
+        android:maxLines="10"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="SELECT DATE"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/datePickerButton1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="JAN 01 2021"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            style="?android:spinnerStyle"
+            android:layout_marginTop="10dp"
+            android:onClick="openDatePicker"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnsendpre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_blue"
+            android:text="CONFIRM"
+            android:textColor="#FFFFFF" />
+        <Button
+            android:id="@+id/btnchat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background_blue"
+            android:text="CHAT"
+            android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

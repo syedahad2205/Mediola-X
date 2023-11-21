@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/white"
+    tools:context="com.syd.masteradmin.Doctorreg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="REGISTER NEW DOCTOR"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            >
+
+            <EditText
+                android:id="@+id/dfnameReg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_buttonborder"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:hint="First Name"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/dlnameReg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_buttonborder"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:hint="Last Name"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:maxLength="10"
+                android:id="@+id/dphonenoReg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"
+                android:background="@drawable/round_buttonborder"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                android:hint="Enter Phone Number"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/ddiscription"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_buttonborder"
+                android:drawableStart="@drawable/ic_baseline_article_24"
+                android:drawableLeft="@drawable/ic_baseline_article_24"
+                android:drawablePadding="10dp"
+                android:hint="Enter the description of doctor"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/dEmailReg"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_buttonborder"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:hint="@string/emailReg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:id="@+id/dPasswordReg"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/round_buttonborder"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:hint="@string/passwordReg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+
+
+            <Spinner
+                style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
+                android:id="@+id/place_spinner"
+                android:background="@drawable/background_blue"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/dregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_blue"
+                android:text="CREATE ACCOUNT"
+                android:textColor="#FFFFFF" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

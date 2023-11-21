@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.syd.aaa">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mediolalogo"
+        android:label="Admin Mediola"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MasterAdminMediOla">
+        <activity android:name="com.syd.aaa.com.syd.masteradmin.Registerdrivers">
+
+        </activity>
+        <service
+            android:name="com.syd.aaa.com.syd.masteradmin.Notifications.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.syd.aaa.com.syd.masteradmin.Notifications.MyFirebaseMessaging"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name="com.syd.aaa.com.syd.masteradmin.Doctorreg">
+
+        </activity>
+        <activity android:name="com.syd.aaa.com.syd.masteradmin.MainActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

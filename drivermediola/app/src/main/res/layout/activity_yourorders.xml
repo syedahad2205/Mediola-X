@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.drivermediola.yourorders">
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/datePickerButton1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="JAN 01 2021"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        style="?android:spinnerStyle"
+        android:layout_marginTop="10dp"
+        android:onClick="openDatePicker"/>
+    <TextView
+        android:layout_marginTop="30dp"
+        android:id="@+id/noapp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/viewyourorders"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

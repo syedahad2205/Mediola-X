@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">mediola</string>
+    <string name="usernameReg">Username</string>
+    <string name="emailReg">Email</string>
+    <string name="passwordReg">Password</string>
+    <string name="sign_upReg">Sign up</string>
+    <string name="sign_inLog">Sign in</string>
+    <string name="signin_redirect">Already a member? Sign in!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="signup_redirect">Don\'t have an account? Register here!</string>
+    <string name="title_activity_category">Category</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="category">
+
+        <item>SELECT CATEGORY</item>
+        <item>General Physicians</item>
+        <item>Pediatricians</item>
+        <item>General Surgeon</item>
+        <item>Cardiologist</item>
+        <item>Dentist</item>
+        <item>Dermatologists</item>
+        <item>Gynecologist</item>
+        <item>ENT Specialist</item>
+
+    </string-array>
+
+    <string-array name="location">
+
+        <item>SELECT CATEGORY</item>
+        <item>Madhav Nagar</item>
+        <item>End Point</item>
+        <item>Tiger Circle</item>
+        <item>Eshwar Nagar</item>
+        <item>Industrial Area</item>
+        <item>VP Nagar</item>
+        <item>Syndicate Circle</item>
+        <item>Perampalli</item>
+
+    </string-array>
+
+    <string-array name="booktime">
+        <item>9:00-9:30</item>
+        <item>9:30-10:00</item>
+        <item>10:00-10:30</item>
+        <item>11:00-11:30</item>
+        <item>11:30-12:00</item>
+        <item>12:00-12:30</item>
+        <item>2:00-2:30</item>
+        <item>2:30-3:00</item>
+        <item>3:00-3:30</item>
+        <item>3:30-4:00</item>
+        <item>4:00-4:30</item>
+        <item>4:30-5:00</item>
+    </string-array>
+</resources>
